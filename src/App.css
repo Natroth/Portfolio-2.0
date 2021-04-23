@@ -1,38 +1,303 @@
-.App {
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap");
+
+@media only screen and (max-width: 600px) {
+  .inner-side-image {
+    width: 150px !important;
+    height: 280px !important;
+  }
+
+  .projectImg {
+    width: 10rem !important;
+    max-height: 8rem !important;
+    margin: auto !important;
+  }
+
+  .project-links {
+    opacity: 1 !important;
+  }
+  .blue-page {
+    height: 48rem !important;
+  }
+  .intro-to-skills {
+    margin-top: -48rem !important;
+  }
+  .skills-list {
+    width: 20rem !important;
+    height: 52rem !important;
+  }
+}
+
+a:hover,
+a:visited,
+a:link,
+a:active {
+  text-decoration: none !important;
+}
+
+ul {
+  padding-left: 0;
+}
+
+li {
+  text-align: left;
+}
+
+.logo {
+  color: #fff;
+  background-color: #000;
+  border-radius: 100px;
+  padding: 15px;
+  margin-top: 15px;
+  font-family: "Raleway", sans-serif;
+}
+
+.introPg {
+  text-align: center;
+  max-width: 50rem;
+  margin: auto;
+  font-size: 22px;
+  margin-bottom: 2rem;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.sayHello {
+  padding: 1rem;
+  display: flex;
+  flex-flow: column;
+  margin: auto;
+  align-items: center;
+  color: #fff;
+}
+
+.waveImg {
+  width: 8rem;
+  max-width: auto;
+  border-radius: 250px;
+  border: 0px solid #09bcf4;
+  padding: 15px;
+  background-color: #fff;
+  margin-bottom: 1rem;
+}
+
+.welcomePage {
+  margin: auto;
+}
+
+.sideImages {
+  padding-top: 2rem;
+  padding-bottom: 3rem;
+  display: flex;
+  flex-flow: wrap;
+  margin: auto;
+  justify-content: center;
+}
+
+.inner-side-image {
+  width: 200px;
+  height: 350px;
+  box-shadow: 2px 2px 15px #696969;
+}
+
+.aboutPage {
+  background-color: #09bcf4;
+  padding-top: 2rem;
+  position: relative;
+}
+
+.header {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  width: 80vw;
+  margin: auto;
+  align-items: center;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 60px;
+  font-weight: bolder;
+  color: #000;
+}
+
+.header-links {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-around;
+  font-size: 25px;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.projects-wrap {
+  background-color: #fff;
+  margin: auto;
+  border-radius: 10px;
+  margin-bottom: 3rem;
+}
+
+.category-header {
+  text-align: center;
+  font-family: "Indie Flower", cursive;
+}
+
+.tagLine {
+  text-align: center;
+  padding-bottom: 3rem;
+  font-family: "Ubuntu", sans-serif;
+  color: #000;
+  font-weight: bolder;
+}
+
+.secondTag {
+  font-weight: 200;
+  margin-top: -2rem;
+  color: #09bcf4;
+}
+
+.sectionHead {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 40px;
+}
+
+.project-wrapper {
+  width: 70%;
+  margin: auto;
+  display: flex;
+  flex-flow: wrap;
+  justify-content: space-between;
+  padding: 2rem;
+  box-shadow: #696969 3px 3px 15px;
+  border-radius: 10px;
+  align-items: center;
+  margin-top: 3rem;
+  transition: 0.6s;
+}
+
+.projectImg {
+  width: 15rem;
+  max-height: 13rem;
+}
+
+.project-info {
+  text-align: left;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.project-title {
+  font-size: 30px;
+  text-decoration: #696969;
+}
+
+.project-desc {
+  max-width: 25rem;
+}
+
+.project-links {
+  opacity: 0;
+  transition: 0.3s;
+  display: flex;
+  flex-flow: wrap;
+}
+
+.project-wrapper:hover .project-links {
+  opacity: 1;
+}
+.project-wrapper:hover {
+  padding: 2.3rem;
+}
+
+.intro-to-projects {
+  text-align: center;
+  margin-top: 2rem;
+  font-weight: 400;
+  font-family: "Ubuntu", sans-serif;
+  padding: 1rem;
+}
+
+.skills-list {
+  list-style-type: none;
+  font-family: "Ubuntu", sans-serif;
+  background-color: #fff;
+  width: 25rem;
+  font-size: 18px;
+  border-radius: 10px;
+  box-shadow: #696969 3px 3px 15px;
+  text-align: center;
+  padding: 3rem;
+  height: 50rem;
+}
+
+.skillsPage {
+  background-color: #fff;
+  padding-top: 2rem;
+  display: column;
+}
+
+.skill-cat-header {
+  text-align: center;
+  font-weight: bolder;
+  font-size: 25px;
+}
+
+.skill-list-header {
+  color: #09bcf4;
+  font-size: 21px;
+  margin-top: 1rem;
+}
+
+.blue-page {
+  padding-top: 2rem;
+  height: 40rem;
+  background-color: #09bcf4;
+}
+
+.skill-icon {
+  color: #09bcf4;
+  margin: auto;
+  width: 5rem;
+  margin-bottom: 1.5rem;
+}
+
+.skills-columns {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: space-evenly;
+}
+
+.intro-to-skills {
+  text-align: center;
+  font-family: "Ubuntu", sans-serif;
+  color: #fff;
+  font-size: 1.5rem;
+  margin-top: -38rem;
+  margin-bottom: 5rem;
+}
+
+.social-icon {
+  color: #000;
+  margin: 1rem;
+  font-size: 2rem;
+  transition: 0.3s;
+  text-decoration: none;
+}
+
+.social-icon:hover {
+  color: #96a4af;
+}
+
+.social-icons-wrap {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.bye-wave {
+  width: 10rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.contact-page {
+  margin: auto;
   display: flex;
-  flex-direction: column;
+  flex-flow: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  margin-top: 2rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
