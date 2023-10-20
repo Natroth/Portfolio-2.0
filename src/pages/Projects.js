@@ -14,22 +14,22 @@ export default function Projects() {
   const projectsInfo = [
     {
       id: 0,
-      title: "One Look In",
-      subTitle:
-        "A streaming service where independent musicians can post music to a desktop site where it will be available for listening by the public on their mobile devices. Built primarily with HTML, CSS, JS, PHP and MySql.",
-      imgSrc: onelookin_logo,
-      link: "https://onelookin.com/index.php",
-      codeLink: "https://github.com/Natroth/OneLookIn",
-      selected: false,
-    },
-    {
-      id: 1,
       title: "SoundsLike",
       subTitle:
         "A Song recommendation website. Built with React, Redux, CSS, JS and the Shazam API.",
       imgSrc: soundslike_logo,
       link: "https://soundslike.lynxic.com/",
       codeLink: "https://github.com/Natroth/SoundsLike",
+      selected: false,
+    },
+    {
+      id: 1,
+      title: "One Look In",
+      subTitle:
+        "A streaming service where independent musicians can post music to a desktop site where it will be available for listening by the public on their mobile devices. Built primarily with HTML, CSS, JS, PHP and MySql.",
+      imgSrc: onelookin_logo,
+      link: "https://onelookin.com/",
+      codeLink: "https://github.com/Natroth/OneLookIn",
       selected: false,
     },
     {

@@ -73,40 +73,40 @@ export default function MusicSkills() {
         <ReactAudioPlayer src={PN} id="pn" />
         <ReactAudioPlayer src={DAO} id="dao" />
 
-        <li onClick={(e) => playPreview(e, "numb")}>
+        <li className="song-button" onClick={(e) => playPreview(e, "numb")}>
           {" "}
           <FontAwesomeIcon
             icon={playButton["numb"]}
             size="sm"
-            color="#09bcf4"
+            style={{ marginRight: "1rem" }}
           />{" "}
           Numb
         </li>
-        <li onClick={(e) => playPreview(e, "pn")}>
+        <li className="song-button" onClick={(e) => playPreview(e, "pn")}>
           {" "}
           <FontAwesomeIcon
             icon={playButton["pn"]}
             size="sm"
-            color="#09bcf4"
+            style={{ marginRight: "1rem" }}
           />{" "}
           Pentatonic Nonsense
         </li>
-        <li onClick={(e) => playPreview(e, "dao")}>
+        <li className="song-button" onClick={(e) => playPreview(e, "dao")}>
           {" "}
           <FontAwesomeIcon
             icon={playButton["dao"]}
             size="sm"
-            color="#09bcf4"
+            style={{ marginRight: "1rem" }}
           />{" "}
           Down And Out
         </li>
 
-        <li onClick={(e) => playPreview(e, "firefly")}>
+        <li className="song-button" onClick={(e) => playPreview(e, "firefly")}>
           {" "}
           <FontAwesomeIcon
             icon={playButton["firefly"]}
             size="sm"
-            color="#09bcf4"
+            style={{ marginRight: "1rem" }}
           />{" "}
           Firefly
         </li>
